@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import iosMath
 
 class ViewController: UIViewController {
 

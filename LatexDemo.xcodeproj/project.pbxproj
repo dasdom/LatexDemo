@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		F236F464261FA18700796E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F236F462261FA18700796E3D /* LaunchScreen.storyboard */; };
 		F236F46F261FA18800796E3D /* LatexDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F46E261FA18800796E3D /* LatexDemoTests.swift */; };
 		F236F47A261FA18800796E3D /* LatexDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236F479261FA18800796E3D /* LatexDemoUITests.swift */; };
+		F236F48C261FA1A600796E3D /* iosMath in Frameworks */ = {isa = PBXBuildFile; productRef = F236F48B261FA1A600796E3D /* iosMath */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F236F48C261FA1A600796E3D /* iosMath in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = LatexDemo;
+			packageProductDependencies = (
+				F236F48B261FA1A600796E3D /* iosMath */,
+			);
 			productName = LatexDemo;
 			productReference = F236F454261FA18700796E3D /* LatexDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = F236F44B261FA18700796E3D;
+			packageReferences = (
+				F236F48A261FA1A600796E3D /* XCRemoteSwiftPackageReference "iosMath" */,
+			);
 			productRefGroup = F236F455261FA18700796E3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F236F48A261FA1A600796E3D /* XCRemoteSwiftPackageReference "iosMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dasdom/iosMath.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F236F48B261FA1A600796E3D /* iosMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F236F48A261FA1A600796E3D /* XCRemoteSwiftPackageReference "iosMath" */;
+			productName = iosMath;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F236F44C261FA18700796E3D /* Project object */;
 }
